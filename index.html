@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Table</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div>
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" placeholder="Enter search term">
+        <button onclick="searchTable()">Search</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr class="bg-info">
+                <th class="bg-info" data-colname="name" data-order="desc">Name</th>
+                <th data-colname="major" data-order="desc">Major</th>
+                <th data-colname="age" data-order="desc">Age</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <!-- Table content will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-Jj17sWFRl5r8lrjIsOzmJ6RKxG3VSm+cbHT4LcHcdjRerigGkXnLsXgDGeW3mXyY"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
