@@ -50,8 +50,6 @@ function buildTable(data) {
     }
 }
 
-// Your existing code...
-
 function searchTable() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchInput");
